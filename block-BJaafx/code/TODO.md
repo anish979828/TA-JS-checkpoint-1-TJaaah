@@ -1,6 +1,14 @@
 1. Using loops take 10 inputs from user and find the average of all the numbers.
+<!-- let sum = 0
+for (let i = 0; i < 10; i++) {
+  var num = +prompt("Enter a number");
+  sum += num;
+}
+let avg = sum/10; -->
+alert (`The average of these number is ${avg}`)
 
 2. What will be the output of the code below
+<!-- // undefined -->
 
 ```js
 let i = 0;
@@ -11,10 +19,42 @@ while (i < 3) {
 ```
 
 3. Write a function named `getEvenSum` that accepts a parameter `max`. Return the sum of all even numbers. The value of max should default to 10.
+<!-- // function getEvenSum(max = 10){
+  let sum = 0
+  for (i = 1 ; i<=max; i++){
+    if (i % 2 == 0){
+      sum += i;
+    }
+  }
+  return sum;
+}
+getEvenSum() -->
 
 4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10.
+<!-- // function getOddSum(max = 10){
+  let sum = 0
+  for (i = 1 ; i<=max; i++){
+    if (i % 2 !== 0){
+      sum += i;
+    }
+  }
+  return sum;
+}
+getOddSum() -->
 
 5. Write a function named `getProductOfDigits` that accepts a parameter `num`. It returns the product of all the digits in the number.
+<!-- // function getProductOfDigits(num){
+  let product = 1
+  for (i = 1 ; i<=num; i++){
+    if (num < 0){
+      return "not a valid input"
+    } else {
+      product *= i;
+    }
+  }
+  return product;
+}
+getproductsOfDigits() -->
 
 - If the input value is less than 0 return `not a valid input`
 - For example if the input is `123` output should be `6`.

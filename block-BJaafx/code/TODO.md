@@ -45,7 +45,7 @@ getOddSum() -->
 5. Write a function named `getProductOfDigits` that accepts a parameter `num`. It returns the product of all the digits in the number.
 <!-- // function getProductOfDigits(num){
   let product = 1
-  for (i = 1 ; i<=num; i++){
+  for (i = 0 ; i <= num; i++){
     if (num < 0){
       return "not a valid input"
     } else {
@@ -54,7 +54,7 @@ getOddSum() -->
   }
   return product;
 }
-getproductsOfDigits() -->
+getProductOfDigits() -->
 
 - If the input value is less than 0 return `not a valid input`
 - For example if the input is `123` output should be `6`.
@@ -74,9 +74,9 @@ function check(num) {
   return num;
 }
 
-check(10); // output
-check(1); // output
-check(5); // output
+check(10); //"Bigger than 5"
+check(1); //"smaller than 5"
+check(5); //5
 ```
 
 7. What will be the output of the following code given below? Explain the reason?
@@ -88,9 +88,9 @@ function getOutput(name) {
   return 'Who are you';
 }
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
-getOutput(); // what will be the output
+getOutput('Arya'); // "You are arya"
+getOutput('John'); // "You are john"
+getOutput(); // "Who are you"
 ```
 
 8. What will be the output of the following code given below? Explain the reason?
@@ -102,11 +102,21 @@ function getOutput(name) {
   return 'Who are you';
 }
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
-getOutput(); // what will be the output
+getOutput('Arya'); // Output  "you are arya" and it return "Who are you" 
+getOutput('John'); // Output "You are john" and it return "Who are you"
+getOutput(); // "Who are You"
 ```
 
 9. Can a function have multiple return statement? Give one example if possible and explain the reason.
+<!-- // Yes a function have multiple return statement , it is possible when condition applied in our function like 
+function sayHello (name){
+  if (name == "Anish"){
+    return `Hello Anish`
+  } else{
+    return `Who are You`
+  }
+} -->
 
 10. What is the difference between `for` loop and `while` loop. What are the different place you can use them? Explain with example.
+<!-- // The 'for' loop used only when we already knew the number of iterations. The 'while' loop used only when the number of iteration are not exactly known. If the condition is not put up in 'for' loop, then loop iterates infinite times. If the condition is not put up in 'while' loop, it provides compilation error.  -->
+<!-- For example, if we want to ask a user for a number between 1 and 10, we don't know how many times the user may enter a larger number, so we keep asking "while the number is not between 1 and 10". -->
